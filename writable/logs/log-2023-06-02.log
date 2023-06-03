@@ -1,0 +1,501 @@
+ERROR - 2023-06-02 19:44:51 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 19:50:48 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 19:51:36 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 19:53:59 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/jorgehmo...', 173)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('db', 'root', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('db', 'root', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 19:54:42 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for url_scraper-db-1 failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/jorgehmo...', 173)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('url_scraper-db-...', 'root', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for url_scraper-db-1 failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('url_scraper-db-...', 'root', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for url_scraper-db-1 failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 19:54:59 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/jorgehmo...', 173)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('db', 'root', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('db', 'root', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 19:58:44 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/jorgehmo...', 173)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('db', 'koombea_db_user', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('db', 'koombea_db_user', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for db failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 20:04:33 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for database failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/jorgehmo...', 173)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('database', 'koombea_db_user', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for database failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('database', 'koombea_db_user', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for database failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 20:04:48 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'koombea_db_user', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 20:04:54 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for database failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', '/Users/jorgehmo...', 173)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('database', 'koombea_db_user', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for database failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('database', 'koombea_db_user', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for database failed: nodename nor servname provided, or not known in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-06-02 20:38:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'url_scraper', 3306, '', 0)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/vendor/codeigniter4/shield/src/Commands/Setup.php(308): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/vendor/codeigniter4/shield/src/Commands/Setup.php(92): CodeIgniter\Shield\Commands\Setup->runMigrations()
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/vendor/codeigniter4/shield/src/Commands/Setup.php(79): CodeIgniter\Shield\Commands\Setup->publishConfig()
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Shield\Commands\Setup->run(Array)
+#12 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('shield:setup', Array)
+#13 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /Users/jorgehmodesto/projects/koombea/url_scraper/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 /Users/jorgehmodesto/projects/koombea/url_scraper/vendor/codeigniter4/shield/src/Commands/Setup.php(308): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 /Users/jorgehmodesto/projects/koombea/url_scraper/vendor/codeigniter4/shield/src/Commands/Setup.php(92): CodeIgniter\Shield\Commands\Setup->runMigrations()
+#9 /Users/jorgehmodesto/projects/koombea/url_scraper/vendor/codeigniter4/shield/src/Commands/Setup.php(79): CodeIgniter\Shield\Commands\Setup->publishConfig()
+#10 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Commands.php(65): CodeIgniter\Shield\Commands\Setup->run(Array)
+#11 /Users/jorgehmodesto/projects/koombea/url_scraper/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run('shield:setup', Array)
+#12 /Users/jorgehmodesto/projects/koombea/url_scraper/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+CRITICAL - 2023-06-02 20:57:08 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:57:12 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:57:17 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:57:18 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:57:32 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:57:33 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:58:07 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:58:20 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 20:58:22 --> Too few arguments to function App\Controllers\Home::__construct(), 0 passed in /Users/jorgehmodesto/projects/koombea/url_scraper/system/CodeIgniter.php on line 906 and exactly 1 expected
+in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 21:18:16 --> The route for "scraper" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('scraper')
+ 2 SYSTEMPATH/Common.php(880): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Views/welcome_message.php(84): redirect('scraper')
+ 4 SYSTEMPATH/View/View.php(213): include('/Users/jorgehmodesto/projects/koombea/url_scraper/app/Views/welcome_message.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 7 APPPATH/Controllers/Home.php(9): view('welcome_message')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
+CRITICAL - 2023-06-02 21:18:52 --> The route for "scraper" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('scraper')
+ 2 SYSTEMPATH/Common.php(880): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Views/welcome_message.php(84): redirect('scraper')
+ 4 SYSTEMPATH/View/View.php(213): include('/Users/jorgehmodesto/projects/koombea/url_scraper/app/Views/welcome_message.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 7 APPPATH/Controllers/Home.php(9): view('welcome_message')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/jorgehmodesto/projects/koombea/url_scraper/public/index.php')
