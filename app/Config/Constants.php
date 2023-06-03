@@ -92,3 +92,13 @@ define('EVENT_PRIORITY_NORMAL', 100);
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_HIGH instead.
  */
 define('EVENT_PRIORITY_HIGH', 10);
+
+/**
+ * @since 1.0.0
+ * @author Jorge Modesto
+ *
+ * Defines page scrape statuses
+ */
+define('PAGE_SCRAPE_IN_PROGRESS', 0);
+define('PAGE_SCRAPE_SUCCESS', 1);
+define('PAGE_SCRAPE_FAILED', 2);
