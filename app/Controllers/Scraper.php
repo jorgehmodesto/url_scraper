@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\PageModel;
 
-class Scrap extends BaseController
+class Scraper extends BaseController
 {
     /**
      * @var PageModel $pageModel

@@ -16,22 +16,23 @@ class CreatePagesTable extends Migration
     {
         $this->forge->addField([
             'id' => [
-                'type' => 'INT',
-                'unsigned' => true,
-                'autoincrement' => true,
+                'type'           => 'INT',
+                'constraint'     => 5,
+                'unsigned'       => true,
+                'auto_increment' => true,
             ],
             'name' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
             'status' => [
-                'type' => 'TINYINT',
+                'type' => 'ENUM',
                 'constraint' => [PAGE_SCRAPE_IN_PROGRESS, PAGE_SCRAPE_SUCCESS, PAGE_SCRAPE_FAILED],
                 'default' => PAGE_SCRAPE_IN_PROGRESS,
             ],
         ]);
 
-        $this->forge->addKey('id', true);
+        $this->forge->addKey('id', true, true, 'primary_key_pages');
         $this->forge->createTable('pages');
     }
 

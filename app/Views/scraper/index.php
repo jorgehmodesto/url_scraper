@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?= $this->render('app_header') ?>
+    <head>
+
+        <?= $this->render('app_header') ?>
+
+        <script type="text/javascript">
+
+            function scrape() {
+                $('#scrape_btn').fadeOut(0);
+                $('#loading_btn').fadeIn(0);
+            }
+
+            function updateTablePagesData(pagesTable) {
+                $.ajax({
+                    url: '<?php echo route_to('scraped_pages'); ?>',
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function(response) {
+                        pagesTable.clear().rows.add(response.data).draw();
+                    },
+                    error: function(xhr, status, error) {
+                        console.log('Error:', error);
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                var pagesTable = $('#table_pages').DataTable({
+                    stripeClasses: ['striped'],
+                });
+                updateTablePagesData(pagesTable);
+            })
+
+        </script>
+    </head>
     <body>
         <header>
-
             <div class="menu">
                 <ul>
                     <?= $this->render('logo') ?>
@@ -12,7 +44,6 @@
                     <li class="menu-item"><a href="<?php echo route_to('logout')?>" >Logout</a></li>
                 </ul>
             </div>
-
         </header>
 
         <section class="content">
@@ -35,23 +66,13 @@
             </form>
 
             <div class="pages-table">
-                <table id="processed_pages" class="display" style="width:100%">
+                <table id="table_pages" class="display datatables" style="width:100%">
                     <thead style="background-color: #f2f2f2">
                         <tr>
                             <th>Name</th>
                             <th style="width:20%">Total links</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="<?php echo route_to('page/$1', 1); ?>">Google</a></td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td><a href="<?php echo route_to('page/$1', 2); ?>">Jorge Modesto</a></td>
-                            <td>in progress</td>
-                        </tr>
-                    </tbody>
                 </table>
             </div>
         </section>

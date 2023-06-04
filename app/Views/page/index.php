@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <?= $this->render('app_header') ?>
+    <head>
+
+        <?= $this->render('app_header') ?>
+
+        <script type="text/javascript">
+
+            function scrape() {
+                $('#scrape_btn').fadeOut(0);
+                $('#loading_btn').fadeIn(0);
+            }
+
+            function updateLinkPagesData(linksTable) {
+                $.ajax({
+                    url: '<?php echo route_to('page/links/$1', $page_id); ?>',
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function(response) {
+                        linksTable.clear().rows.add(response.data).draw();
+                    },
+                    error: function(xhr, status, error) {
+                        console.log('Error:', error);
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                var linksTable = $('#links_table').DataTable({
+                    stripeClasses: ['striped'],
+                });
+                updateLinkPagesData(linksTable);
+            })
+
+        </script>
+    </head>
     <body>
         <header>
 
@@ -20,23 +53,13 @@
 
             <a href="<?php echo route_to('scraper') ?>" class="btn btn-link">< Back</a>
             <div class="pages-table">
-                <table id="processed_pages" class="display" style="width:100%">
+                <table id="links_table" class="display datatables" style="width:100%">
                     <thead style="background-color: #f2f2f2">
                     <tr>
                         <th>Name</th>
                         <th>Link</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <td>Home page</td>
-                        <td><a href="https://www.google.com" target="_blank">www.google.com</a></td>
-                    </tr>
-                    <tr>
-                        <td>This is a product</td>
-                        <td><a href="https://www.google.com/products/1" target="_blank">www.google.com/products/1</a></td>
-                    </tr>
-                    </tbody>
                 </table>
             </div>
         </section>

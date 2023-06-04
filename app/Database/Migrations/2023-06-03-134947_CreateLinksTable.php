@@ -17,12 +17,17 @@ class CreateLinksTable extends Migration
         $this->forge->addField([
             'id' => [
                 'type' => 'INT',
+                'constraint' => 5,
                 'unsigned' => true,
-                'autoincrement' => true,
+                'auto_increment' => true,
             ],
             'page_id' => [
                 'type' => 'INT',
                 'unsigned' => true,
+            ],
+            'description' => [
+                'type' => 'VARCHAR',
+                'constraint' => '100',
             ],
             'url' => [
                 'type' => 'VARCHAR',

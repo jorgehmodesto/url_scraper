@@ -30,12 +30,12 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/scraper', 'Scrap::index', [
-    'as' => 'scraper'
-]);
+
+$routes->get('/scraper', 'Scraper::index', ['as' => 'scraper']);
+$routes->get('/scraper/pages', 'Scraper::pages', ['as' => 'scraped_pages']);
 
 $routes->get('/page/(:num)', 'Page::index/$1', ['as' => 'page/$1']);
-
+$routes->get('/page/links/(:num)', 'Page::links/$1', ['as' => 'page/links/$1']);
 
 service('auth')->routes($routes);
 

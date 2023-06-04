@@ -179,7 +179,7 @@ class CLIRequest extends Request
     protected function parseCommand()
     {
         $args = $this->getServer('argv');
-        array_shift($args); // Scrap index.php
+        array_shift($args); // Scraper index.php
 
         $optionValue = false;
 
