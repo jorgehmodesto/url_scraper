@@ -1,8 +1,8 @@
-# Koombea Techinical Assesment
+# Koombea Technical Assessment
 
 ## PHP Senior Developer
 
-This repository contains an URL Scraper a application developed with the following stack:
+This repository contains an URL Scraper application developed with the following stack:
 * [PHP 8.2.6](https://www.php.net/releases/8.2/en.php)
   * [Codeigniter 4.3.5](http://forum.codeigniter.com)
 * [SQLite](https://www.sqlite.org/index.html)
@@ -20,7 +20,7 @@ And check if the PHP version has returned:
 * ``PHP 8.2.6 (cli) (built: May 11 2023 12:51:38) (NTS) Copyright (c) The PHP Group``
 
 Then, simply clone the repository to the desired location in you env:
-``git clone https://github.com/jorgehmodesto/url_scraper.git``
+* ``git clone https://github.com/jorgehmodesto/url_scraper.git``
 
 After downloading this repository, navigate to its root path, and run the following command:
 * ``composer install``
