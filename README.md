@@ -1,54 +1,63 @@
-# CodeIgniter 4 Framework
+# Koombea Techinical Assesment
 
-## What is CodeIgniter?
+## PHP Senior Developer
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+This repository contains an URL Scraper a application developed with the following stack:
+* [PHP 8.2.6](https://www.php.net/releases/8.2/en.php)
+  * [Codeigniter 4.3.5](http://forum.codeigniter.com)
+* [SQLite](https://www.sqlite.org/index.html)
+* [Bootstrap 5.3.0](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Steps to run the application
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+The intention was to provide a solution with the minimal environment requirements to run it. So,
+you gotta have only php 7.2+, [composer](https://getcomposer.org/) and git running fine.
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+For that, you can simply run the php version checker command:
+* ``php -v``
 
-## Important Change with index.php
+And check if the PHP version has returned:
+* ``PHP 8.2.6 (cli) (built: May 11 2023 12:51:38) (NTS) Copyright (c) The PHP Group``
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Then, simply clone the repository to the desired location in you env:
+``git clone https://github.com/jorgehmodesto/url_scraper.git``
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+After downloading this repository, navigate to its root path, and run the following command:
+* ``composer install``
 
-**Please** read the user guide for a better explanation of how CI4 works!
+The command above, is gonna install all the dependencies to make the framework, and the used libraries work.
 
-## Repository Management
+### Accessing the Application
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+PHP has a built-in server which was introducted in version 5.4.0, turning too much server conf unneeded,
+so, you can use the codeigniter [spark](https://codeigniter.org/user_guide/cli/cli_overview.html?highlight=spark#the-spark-commands)
+to make your application accessible throught the web browser. To do that, you may run the following command:
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+* ``php spark serve``
 
-## Contributing
+The command above is gonna run the built-in server from your PHP, and by default, use the port 8080 from your
+server, as you can see below:
 
-We welcome contributions from the community.
+```
+CodeIgniter v4.3.5 Command Line Tool - Server Time: 2023-06-05 07:57:51 UTC+00:00
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+CodeIgniter development server started on http://localhost:8080
+Press Control-C to stop.
+[Mon Jun  5 04:57:51 2023] PHP 8.2.6 Development Server (http://localhost:8080) started
+```
 
-## Server Requirements
+## Used tools
 
-PHP version 7.4 or higher is required, with the following extensions installed:
+### [Symfony DomCrawler Component](https://symfony.com/doc/current/components/dom_crawler.html)
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+In order to make the links scrape from the pages, probably the best library to be used, was Symfony DomCrawler,
+because its easy, powerful and precise, turning the activity of managing dom elements from page contents
+easier.
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## Additional observations
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Even if the logics to the page status be based on finishing an ajax request, triggering another, we could also 
+implement some queue worker in order to handle the page links extraction. But for something so fast and simple, it could
+be easily considered [over engineering](https://en.wikipedia.org/wiki/Overengineering).
+
+This application is not containerized in order to avoid hardware platforms conflicts.
