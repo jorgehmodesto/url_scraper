@@ -11,7 +11,8 @@
         "ext-mbstring": "*",
         "codeigniter4/shield": "dev-develop",
         "laminas/laminas-escaper": "^2.9",
-        "psr/log": "^1.1"
+        "psr/log": "^1.1",
+        "symfony/dom-crawler": "^6.3"
     },
     "require-dev": {
         "kint-php/kint": "^5.0.4",
