@@ -52,26 +52,45 @@ class Scraper extends BaseController
 
     public function savePage()
     {
-        $page_url = $this->request->getVar('page_url');
-        $curl = Services::curlrequest();
-        $response = $curl->request('GET', $page_url);
+        try {
+            $page_url = $this->request->getVar('page_url');
 
-        $contents = $response->getBody();
+            if ( filter_var($page_url, FILTER_VALIDATE_URL) === false ) {
+                throw new \Exception('You should enter a valid page url.');
+            }
 
-        $pageScraper = new PageScraper($contents);
+            $curl = Services::curlrequest();
+            $response = $curl->request('GET', $page_url);
 
-        $extractedItems = $pageScraper->extract(['title']);
+            $contents = $response->getBody();
 
-        if (empty($extractedItems['title'])) {
-            throw new \Exception('Page title not found');
+            if ( empty($contents)) {
+                throw new \Exception('Empty page body.');
+            }
+
+            $pageScraper = new PageScraper($contents);
+
+            $extractedItems = $pageScraper->extract(['title']);
+
+            if (empty($extractedItems['title'])) {
+                throw new \Exception('Page title not found');
+            }
+
+            $this->pageModel->insert(['name' => $extractedItems['title'], 'status' => PAGE_SCRAPE_IN_PROGRESS]);
+
+            return $this->response->setJSON([
+                'success' => true,
+                'page_id' => $this->pageModel->getInsertID(),
+                'page_url' => $page_url,
+            ]);
+
+        } catch (\Exception $e) {
+
+            return $this->response->setJSON([
+                'success' => false,
+                'error_message' => $e->getMessage(),
+            ]);
         }
-
-        $this->pageModel->insert(['name' => $extractedItems['title'], 'status' => PAGE_SCRAPE_IN_PROGRESS]);
-
-        return $this->response->setJSON([
-            'page_id' => $this->pageModel->getInsertID(),
-            'page_url' => $page_url
-        ]);
     }
 
     public function savePageLinks()

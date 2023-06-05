@@ -31,8 +31,19 @@
                 $('#loading_btn').fadeIn(0);
 
                 $.post('<?php echo route_to('save_page'); ?>', $('#frmScrape').serialize(), function(response) {
-                    updateTablePagesData();
-                    scrapeLinks(response.page_id, response.page_url);
+
+                    if (response.success == true) {
+                        updateTablePagesData();
+                        scrapeLinks(response.page_id, response.page_url);
+                    } else {
+                        $('#scrape_btn').fadeIn(0);
+                        $('#loading_btn').fadeOut(0);
+
+                        $('#errorMessage').html(response.error_message);
+                        $('#errorMessage').fadeIn().delay(5000).fadeOut();
+                    }
+
+                    $('#page_url').reset();
                 });
             }
 
@@ -70,6 +81,7 @@
             <h1 style="text-align: center">Scrape links from URL</h1>
 
             <form class="row needs-validation" style="margin-top: 30px" id="frmScrape" name="frmScrape" method="POST" action="javascript:savePage()">
+                <div class="alert alert-danger hide" id="errorMessage" role="alert"></div>
                 <div class="col-10">
                     <input type="text" class="form-control" id="page_url" name="page_url" placeholder="Add new page" required>
                     <div class="invalid-feedback">
