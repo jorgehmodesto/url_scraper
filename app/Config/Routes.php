@@ -33,6 +33,8 @@ $routes->get('/', 'Home::index');
 
 $routes->get('/scraper', 'Scraper::index', ['as' => 'scraper']);
 $routes->get('/scraper/pages', 'Scraper::pages', ['as' => 'scraped_pages']);
+$routes->post('/scraper/page', 'Scraper::savePage', ['as' => 'save_page']);
+$routes->post('/scraper/page/links', 'Scraper::savePageLinks', ['as' => 'save_links']);
 
 $routes->get('/page/(:num)', 'Page::index/$1', ['as' => 'page/$1']);
 $routes->get('/page/links/(:num)', 'Page::links/$1', ['as' => 'page/links/$1']);

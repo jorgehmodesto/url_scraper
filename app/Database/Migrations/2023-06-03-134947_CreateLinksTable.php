@@ -31,7 +31,7 @@ class CreateLinksTable extends Migration
             ],
             'url' => [
                 'type' => 'VARCHAR',
-                'constraint' => '100',
+                'constraint' => '255',
             ],
         ]);
 

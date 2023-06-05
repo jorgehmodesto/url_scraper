@@ -6,12 +6,40 @@
 
         <script type="text/javascript">
 
-            function scrape() {
-                $('#scrape_btn').fadeOut(0);
-                $('#loading_btn').fadeIn(0);
+            $(document).ready(function() {
+                $('#table_pages').DataTable({
+                    stripeClasses: ['striped'],
+                });
+
+                updateTablePagesData();
+            })
+
+            function scrapeLinks(page_id, page_url) {
+
+                $.post('<?php echo route_to('save_links'); ?>', {page_id: page_id, page_url: page_url}, function(response) {
+
+                    updateTablePagesData();
+
+                    $('#scrape_btn').fadeIn(0);
+                    $('#loading_btn').fadeOut(0);
+
+                });
             }
 
-            function updateTablePagesData(pagesTable) {
+            function savePage() {
+                $('#scrape_btn').fadeOut(0);
+                $('#loading_btn').fadeIn(0);
+
+                $.post('<?php echo route_to('save_page'); ?>', $('#frmScrape').serialize(), function(response) {
+                    updateTablePagesData();
+                    scrapeLinks(response.page_id, response.page_url);
+                });
+            }
+
+            function updateTablePagesData() {
+
+                var pagesTable = $('#table_pages').DataTable();
+
                 $.ajax({
                     url: '<?php echo route_to('scraped_pages'); ?>',
                     method: 'GET',
@@ -24,14 +52,6 @@
                     }
                 });
             }
-
-            $(document).ready(function() {
-                var pagesTable = $('#table_pages').DataTable({
-                    stripeClasses: ['striped'],
-                });
-                updateTablePagesData(pagesTable);
-            })
-
         </script>
     </head>
     <body>
@@ -47,9 +67,9 @@
         </header>
 
         <section class="content">
-            <h1 style="text-align: center">Scrap links from URL</h1>
+            <h1 style="text-align: center">Scrape links from URL</h1>
 
-            <form class="row needs-validation" style="margin-top: 30px" id="frmScrape" action="javascript:scrape()">
+            <form class="row needs-validation" style="margin-top: 30px" id="frmScrape" name="frmScrape" method="POST" action="javascript:savePage()">
                 <div class="col-10">
                     <input type="text" class="form-control" id="page_url" name="page_url" placeholder="Add new page" required>
                     <div class="invalid-feedback">
