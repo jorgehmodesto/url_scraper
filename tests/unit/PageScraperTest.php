@@ -30,6 +30,25 @@ class PageScraperTest extends CIUnitTestCase
         $this->assertEquals($expected, $pageScraper->extract($params));
     }
 
+    public function testEmptyNodeException()
+    {
+        $htmlNoTrackableTags = <<<HTML_NO_TRACKABLE_TAGS
+            <html>
+                <head>
+                    <notitle>This is a valid title</notitle>
+                </head>
+                <body>
+                    Simple body contents
+                </body>
+            </html>
+HTML_NO_TRACKABLE_TAGS;
+
+        $pageScraper = new PageScraper($htmlNoTrackableTags);
+
+        $this->expectException(\InvalidArgumentException::class);
+        $pageScraper->extract(['title']);
+    }
+
     public function extractionDataProvider()
     {
         $title = "This is a valid title";
@@ -49,17 +68,6 @@ class PageScraperTest extends CIUnitTestCase
                 </body>
             </html>
 HTML;
-
-        $htmlNoTrackableTags = <<<HTML_NO_TRACKABLE_TAGS
-            <html>
-                <head>
-                    <notitle>This is a valid title</notitle>
-                </head>
-                <body>
-                    Simple body contents
-                </body>
-            </html>
-HTML_NO_TRACKABLE_TAGS;
 
         return [
             [
